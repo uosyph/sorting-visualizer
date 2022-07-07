@@ -1,5 +1,5 @@
 # Sorting Visualizer
-Sorting Visualizer written in Java
+Sorting Visualizer
 
 By: Yousef Saeed
 
