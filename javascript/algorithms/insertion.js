@@ -31,7 +31,13 @@ inSortbtn.addEventListener('click', async function(){
     disableSizeSlider();
     disableNewArrayBtn();
     enableReloadBtn();
+    document.querySelector(".insertionSort").style.color = 'white';
+    document.querySelector(".insertionSort").style.background = 'lightBlue';
+    document.querySelector(".insertionSort").style.border = '1.5px lightBlue solid';
     await insertion();
+    document.querySelector(".insertionSort").style.color = '';
+    document.querySelector(".insertionSort").style.background = '';
+    document.querySelector(".insertionSort").style.border = '';
     disableReloadBtn();
     enableSortingBtn();
     enableSizeSlider();

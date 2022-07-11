@@ -20,21 +20,51 @@
 
 
                 <div class="sliders" id="input">
-                    <span id="size">Size
+                    <span id="size"><p>Array Size</p>
                         <input id="arr_sz" type="range" min="5" max="300" step=1 value=150>
                     </span>
-                    <span id="speed">Speed
+                    
+                    <span id="speed"><p>Animation Speed</p>
                         <input id="speed_input" type="range" min="10" max="1000" stepDown=10 value=1000>
                     </span>
                 </div>
 
 
                 <div class="slct-sort">
-                    <button type="button" class="bubbleSort">Bubble Sort</button>
-                    <button type="button" class="selectionSort">Selection Sort</button>
-                    <button type="button" class="insertionSort">Insertion Sort</button>
-                    <button type="button" class="quickSort">Quick Sort</button>
-                    <button type="button" class="mergeSort">Merge Sort</button>
+                    <button type="button" class="bubbleSort">Bubble Sort
+                        <span class="tip">Worst complexity: n^2<br>
+                                        Average complexity: n^2<br>
+                                        Best complexity: n<br>
+                                        Space complexity: 1<br>
+                                        Stable: Yes</span>
+                    </button>
+                    <button type="button" class="selectionSort">Selection Sort
+                        <span class="tip">Worst complexity: n^2<br>
+                                        Average complexity: n^2<br>
+                                        Best complexity: n^2<br>
+                                        Space complexity: 1<br>
+                                        Stable: No</span>
+                    </button>
+                    <button type="button" class="insertionSort">Insertion Sort
+                        <span class="tip">Worst complexity: n^2<br>
+                            Average complexity: n^2<br>
+                            Best complexity: n<br>
+                            Space complexity: 1<br>
+                            Stable: Yes</span>
+                    </button>
+                    <button type="button" class="quickSort">Quick Sort
+                        <span class="tip">Worst complexity: n^2<br>
+                            Average complexity: n*log(n)<br>
+                            Best complexity: n*log(n)<br>
+                            Stable: No</span>
+                    </button>
+                    <button type="button" class="mergeSort">Merge Sort
+                        <span class="tip">Worst complexity: n*log(n)<br>
+                            Average complexity: n*log(n)<br>
+                            Best complexity: n*log(n)<br>
+                            Space complexity: n<br>
+                            Stable: Yes</span>
+                    </button>
                 </div>
             </div>
         </nav>

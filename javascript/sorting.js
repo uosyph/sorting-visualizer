@@ -120,4 +120,3 @@ function disableReloadBtn(){
 function enableReloadBtn(){
     document.querySelector(".reload").disabled = false;
 }
-

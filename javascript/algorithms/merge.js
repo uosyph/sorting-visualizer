@@ -90,7 +90,13 @@ mergeSortbtn.addEventListener('click', async function(){
     disableSizeSlider();
     disableNewArrayBtn();
     enableReloadBtn();
+    document.querySelector(".mergeSort").style.color = 'white';
+    document.querySelector(".mergeSort").style.background = 'lightBlue';
+    document.querySelector(".mergeSort").style.border = '1.5px lightBlue solid';
     await mergeSort(ele, l, r);
+    document.querySelector(".mergeSort").style.color = '';
+    document.querySelector(".mergeSort").style.background = '';
+    document.querySelector(".mergeSort").style.border = '';
     disableReloadBtn();
     enableSortingBtn();
     enableSizeSlider();

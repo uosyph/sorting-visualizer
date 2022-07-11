@@ -23,7 +23,13 @@ bubSortbtn.addEventListener('click', async function(){
     disableSizeSlider();
     disableNewArrayBtn();
     enableReloadBtn();
+    document.querySelector(".bubbleSort").style.color = 'white';
+    document.querySelector(".bubbleSort").style.background = 'lightBlue';
+    document.querySelector(".bubbleSort").style.border = '1.5px lightBlue solid';
     await bubble();
+    document.querySelector(".bubbleSort").style.color = '';
+    document.querySelector(".bubbleSort").style.background = '';
+    document.querySelector(".bubbleSort").style.border = '';
     disableReloadBtn();
     enableSortingBtn();
     enableSizeSlider();

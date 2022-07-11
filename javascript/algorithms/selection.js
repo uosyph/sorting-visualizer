@@ -30,7 +30,13 @@ selectionSortbtn.addEventListener('click', async function(){
     disableSizeSlider();
     disableNewArrayBtn();
     enableReloadBtn();
+    document.querySelector(".selectionSort").style.color = 'white';
+    document.querySelector(".selectionSort").style.background = 'lightBlue';
+    document.querySelector(".selectionSort").style.border = '1.5px lightBlue solid';
     await selection();
+    document.querySelector(".selectionSort").style.color = '';
+    document.querySelector(".selectionSort").style.background = '';
+    document.querySelector(".selectionSort").style.border = '';
     disableReloadBtn();
     enableSortingBtn();
     enableSizeSlider();

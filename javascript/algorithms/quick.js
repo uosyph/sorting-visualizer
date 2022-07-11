@@ -55,7 +55,13 @@ quickSortbtn.addEventListener('click', async function(){
     disableSizeSlider();
     disableNewArrayBtn();
     enableReloadBtn();
+    document.querySelector(".quickSort").style.color = 'white';
+    document.querySelector(".quickSort").style.background = 'lightBlue';
+    document.querySelector(".quickSort").style.border = '1.5px lightBlue solid';
     await quickSort(ele, l, r);
+    document.querySelector(".quickSort").style.color = '';
+    document.querySelector(".quickSort").style.background = '';
+    document.querySelector(".quickSort").style.border = '';
     disableReloadBtn();
     enableSortingBtn();
     enableSizeSlider();
