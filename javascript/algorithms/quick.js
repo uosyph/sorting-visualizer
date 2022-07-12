@@ -1,32 +1,32 @@
 async function partitionLomuto(ele, l, r){
     let i = l - 1;
-    ele[r].style.background = 'red';
+    ele[r].style.background = '#CA4E79';
     for(let j = l; j <= r - 1; j++){
-        ele[j].style.background = 'yellow';
+        ele[j].style.background = '#FADF7F';
         await waitforme(delay);
 
         if(parseInt(ele[j].style.height) < parseInt(ele[r].style.height)){
             i++;
             swap(ele[i], ele[j]);
-            ele[i].style.background = 'orange';
-            if(i != j) ele[j].style.background = 'orange';
+            ele[i].style.background = '#f4a261';
+            if(i != j) ele[j].style.background = '#f4a261';
             await waitforme(delay);
         }
         else{
-            ele[j].style.background = 'pink';
+            ele[j].style.background = '#F9C0C0';
         }
     }
     i++; 
     await waitforme(delay);
     swap(ele[i], ele[r]);
-    ele[r].style.background = 'pink';
-    ele[i].style.background = 'green';
+    ele[r].style.background = '#F9C0C0';
+    ele[i].style.background = '#519259';
 
     await waitforme(delay);
     
     for(let k = 0; k < ele.length; k++){
-        if(ele[k].style.background != 'green')
-            ele[k].style.background = 'cyan';
+        if(ele[k].style.background != '#519259')
+            ele[k].style.background = '#7ac7bd';
     }
     return i;
 }
@@ -39,8 +39,8 @@ async function quickSort(ele, l, r){
     }
     else{
         if(l >= 0 && r >= 0 && l <ele.length && r <ele.length){
-            ele[r].style.background = 'green';
-            ele[l].style.background = 'green';
+            ele[r].style.background = '#519259';
+            ele[l].style.background = '#519259';
         }
     }
 }
@@ -56,8 +56,8 @@ quickSortbtn.addEventListener('click', async function(){
     disableNewArrayBtn();
     enableReloadBtn();
     document.querySelector(".quickSort").style.color = 'white';
-    document.querySelector(".quickSort").style.background = 'lightBlue';
-    document.querySelector(".quickSort").style.border = '1.5px lightBlue solid';
+    document.querySelector(".quickSort").style.background = '#58afcc';
+    document.querySelector(".quickSort").style.border = '1.5px #58afcc solid';
     await quickSort(ele, l, r);
     document.querySelector(".quickSort").style.color = '';
     document.querySelector(".quickSort").style.background = '';
