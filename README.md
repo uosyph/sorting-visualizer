@@ -2,9 +2,9 @@
 Sorting Visualizer
 </h2>
 
-<h3 align="center">
-<a>yousafesaeed.github.io/sorting-visualizer</a>
-</h3>
+<h4 align="center">
+<a href="https://yousafesaeed.github.io/sorting-visualizer" target="_blank">yousafesaeed.github.io/sorting-visualizer</a>
+</h4>
 
 ---
 
