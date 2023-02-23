@@ -13,5 +13,5 @@ A website that visualizes the process of different Sorting Algorithms;
 
 ---
 
-![demo](https://raw.githubusercontent.com/yousafesaeed/sorting-visualizer/main/mdemo/visDemo-0.png)
+![demo](https://raw.githubusercontent.com/yousafesaeed/sorting-visualizer/main/assets/visDemo-0.png)
 
