@@ -6,6 +6,12 @@
     <title>Sorting Visualizer</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <link rel="stylesheet" href="css/style.css">    
+    <script defer src="javascript/sorting.js"></script>
+    <script defer src="javascript/algorithms/bubble.js"></script>
+    <script defer src="javascript/algorithms/insertion.js"></script>
+    <script defer src="javascript/algorithms/merge.js"></script>
+    <script defer src="javascript/algorithms/quick.js"></script>
+    <script defer src="javascript/algorithms/selection.js"></script>
 </head>
 <body>
     <header>
@@ -33,38 +39,49 @@
 
                 <div class="slct-sort">
                     <button type="button" class="bubbleSort">Bubble Sort
-                        <span class="tip">Worst complexity: n^2<br>
-                                        Average complexity: n^2<br>
-                                        Best complexity: n<br>
-                                        Space complexity: 1<br>
-                                        Stable: Yes</span>
+                        <span class="tip">
+                            Average complexity: O(n<sup>2</sup>)<br>
+                            Best complexity: O(n)<br>
+                            Worst complexity: O(n<sup>2</sup>)<br>
+                            Space complexity: O(1)<br>
+                            Stable: Yes
+                        </span>
                     </button>
                     <button type="button" class="selectionSort">Selection Sort
-                        <span class="tip">Worst complexity: n^2<br>
-                                        Average complexity: n^2<br>
-                                        Best complexity: n^2<br>
-                                        Space complexity: 1<br>
-                                        Stable: No</span>
+                        <span class="tip">
+                            Average complexity: O(n<sup>2</sup>)<br>
+                            Best complexity: O(n<sup>2</sup>)<br>
+                            Worst complexity: O(n<sup>2</sup>)<br>
+                            Space complexity: O(1)<br>
+                            Stable: No
+                            </span>
                     </button>
                     <button type="button" class="insertionSort">Insertion Sort
-                        <span class="tip">Worst complexity: n^2<br>
-                            Average complexity: n^2<br>
-                            Best complexity: n<br>
-                            Space complexity: 1<br>
-                            Stable: Yes</span>
+                        <span class="tip">
+                            Average complexity: O(n<sup>2</sup>)<br>
+                            Best complexity: O(n)<br>
+                            Worst complexity: O(n<sup>2</sup>)<br>
+                            Space complexity: O(1)<br>
+                            Stable: Yes
+                        </span>
                     </button>
                     <button type="button" class="quickSort">Quick Sort
-                        <span class="tip">Worst complexity: n^2<br>
-                            Average complexity: n*log(n)<br>
-                            Best complexity: n*log(n)<br>
-                            Stable: No</span>
+                        <span class="tip">
+                            Average complexity: O(n*log n)<br>
+                            Best complexity: O(n*log n )<br>
+                            Worst complexity: O(n<sup>2</sup>)<br>
+                            Space complexity: O(n)<br>
+                            Stable: No
+                        </span>
                     </button>
                     <button type="button" class="mergeSort">Merge Sort
-                        <span class="tip">Worst complexity: n*log(n)<br>
-                            Average complexity: n*log(n)<br>
-                            Best complexity: n*log(n)<br>
-                            Space complexity: n<br>
-                            Stable: Yes</span>
+                        <span class="tip">
+                            Average complexity: O(n*log n)<br>
+                            Best complexity: O(n*log n)<br>
+                            Worst complexity: O(n*log n)<br>
+                            Space complexity: O(n)<br>
+                            Stable: Yes
+                        </span>
                     </button>
                 </div>
             </div>
@@ -72,12 +89,5 @@
     </header>
     
     <div id="bars" class="flex-container"></div>
-    
-    <script src="javascript/sorting.js"></script>
-    <script src="javascript/algorithms/bubble.js"></script>
-    <script src="javascript/algorithms/insertion.js"></script>
-    <script src="javascript/algorithms/merge.js"></script>
-    <script src="javascript/algorithms/quick.js"></script>
-    <script src="javascript/algorithms/selection.js"></script>
 </body>
 </html>
