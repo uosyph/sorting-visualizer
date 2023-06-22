@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="javascript/sorting.js"></script>
     <script defer src="javascript/algorithms/bubble.js"></script>
@@ -17,74 +22,72 @@
     <header>
         <h1>Sorting Visualizer</h1>
 
-        <nav>
-            <div class="row">
-                <div class="ary-opt" id="newArray">
-                    <button type="button" class="newArray">New Array</button>
-                    <button type="button" class="reload">Reload</button>
-                </div>
-
-                <div class="sliders" id="input">
-                    <span id="size">
-                        <p>Array Size</p>
-                        <input id="arr_sz" type="range" min="5" max="300" step=1 value=150>
-                    </span>
-
-                    <span id="speed">
-                        <p>Animation Speed</p>
-                        <input id="speed_input" type="range" min="10" max="1000" stepDown=10 value=1000>
-                    </span>
-                </div>
-
-                <div class="slct-sort">
-                    <button type="button" class="bubbleSort">Bubble Sort
-                        <span class="tip">
-                            Average complexity: O(n<sup>2</sup>)<br>
-                            Best complexity: O(n)<br>
-                            Worst complexity: O(n<sup>2</sup>)<br>
-                            Space complexity: O(1)<br>
-                            Stable: Yes
-                        </span>
-                    </button>
-                    <button type="button" class="selectionSort">Selection Sort
-                        <span class="tip">
-                            Average complexity: O(n<sup>2</sup>)<br>
-                            Best complexity: O(n<sup>2</sup>)<br>
-                            Worst complexity: O(n<sup>2</sup>)<br>
-                            Space complexity: O(1)<br>
-                            Stable: No
-                        </span>
-                    </button>
-                    <button type="button" class="insertionSort">Insertion Sort
-                        <span class="tip">
-                            Average complexity: O(n<sup>2</sup>)<br>
-                            Best complexity: O(n)<br>
-                            Worst complexity: O(n<sup>2</sup>)<br>
-                            Space complexity: O(1)<br>
-                            Stable: Yes
-                        </span>
-                    </button>
-                    <button type="button" class="quickSort">Quick Sort
-                        <span class="tip">
-                            Average complexity: O(n*log n)<br>
-                            Best complexity: O(n*log n )<br>
-                            Worst complexity: O(n<sup>2</sup>)<br>
-                            Space complexity: O(n)<br>
-                            Stable: No
-                        </span>
-                    </button>
-                    <button type="button" class="mergeSort">Merge Sort
-                        <span class="tip">
-                            Average complexity: O(n*log n)<br>
-                            Best complexity: O(n*log n)<br>
-                            Worst complexity: O(n*log n)<br>
-                            Space complexity: O(n)<br>
-                            Stable: Yes
-                        </span>
-                    </button>
-                </div>
+        <section>
+            <div class="arr-options" id="newArray">
+                <button type="button" class="newArray">New Array</button>
+                <button type="button" class="reload">Reload</button>
             </div>
-        </nav>
+
+            <div class="sliders" id="input">
+                <span id="size">
+                    <label for="arr_sz">Array Size</label>
+                    <input class="arr-size" id="arr_sz" type="range" min="5" max="300" step=1 value=150>
+                </span>
+
+                <span id="speed">
+                    <label for="speed_input">Animation Speed</label>
+                    <input class="arr-speed" id="speed_input" type="range" min="10" max="1000" stepDown=10 value=1000>
+                </span>
+            </div>
+
+            <div class="slct-sort">
+                <button type="button" class="bubbleSort">Bubble Sort
+                    <span class="tip">
+                        Average complexity: O(n<sup>2</sup>)<br>
+                        Best complexity: O(n)<br>
+                        Worst complexity: O(n<sup>2</sup>)<br>
+                        Space complexity: O(1)<br>
+                        Stable: Yes
+                    </span>
+                </button>
+                <button type="button" class="selectionSort">Selection Sort
+                    <span class="tip">
+                        Average complexity: O(n<sup>2</sup>)<br>
+                        Best complexity: O(n<sup>2</sup>)<br>
+                        Worst complexity: O(n<sup>2</sup>)<br>
+                        Space complexity: O(1)<br>
+                        Stable: No
+                    </span>
+                </button>
+                <button type="button" class="insertionSort">Insertion Sort
+                    <span class="tip">
+                        Average complexity: O(n<sup>2</sup>)<br>
+                        Best complexity: O(n)<br>
+                        Worst complexity: O(n<sup>2</sup>)<br>
+                        Space complexity: O(1)<br>
+                        Stable: Yes
+                    </span>
+                </button>
+                <button type="button" class="quickSort">Quick Sort
+                    <span class="tip">
+                        Average complexity: O(n*log n)<br>
+                        Best complexity: O(n*log n )<br>
+                        Worst complexity: O(n<sup>2</sup>)<br>
+                        Space complexity: O(n)<br>
+                        Stable: No
+                    </span>
+                </button>
+                <button type="button" class="mergeSort">Merge Sort
+                    <span class="tip">
+                        Average complexity: O(n*log n)<br>
+                        Best complexity: O(n*log n)<br>
+                        Worst complexity: O(n*log n)<br>
+                        Space complexity: O(n)<br>
+                        Stable: Yes
+                    </span>
+                </button>
+            </div>
+        </section>
     </header>
 
     <div id="bars" class="flex-container"></div>
