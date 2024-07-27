@@ -1,17 +1,30 @@
-<h1 align="center">
-Sorting Algorithm Visualizer
-</h1>
+# Sorting Algorithm Visualizer
 
-<h3 align="center">
-<a href="https://yousafesaeed.github.io/sorting-visualizer" target="_blank">yousafesaeed.github.io/sorting-visualizer</a>
-</h3>
+A web application to visualize various sorting algorithms in action, including:
 
-<p align="center">
-A website that visualizes the process of different Sorting Algorithms;
-<br>containing: "Bubble Sort, Selection Sort, Insertion Sort, Quick Sort, and Merge Sort.".
-</p>
+-   Bubble Sort
+-   Selection Sort
+-   Insertion Sort
+-   Quick Sort
+-   Merge Sort
 
----
+[Try it out here!](https://uosyph.github.io/sorting-visualizer/)
 
-![demo](https://raw.githubusercontent.com/yousafesaeed/sorting-visualizer/main/assets/visDemo-0.png)
+## Features
 
+-   Visualizes the step-by-step process of sorting algorithms
+-   User-friendly interface
+-   Adjustable array size
+-   Adjustable sorting speed
+-   Real-time comparisons of algorithms
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request for review.
+
+## Author
+
+**Yousef Saeed**:
+[GitHub](https://github.com/uosyph)
+[LinkedIn](https://linkedin.com/in/uosyph)
+[X](https://twitter.com/uosyph)
